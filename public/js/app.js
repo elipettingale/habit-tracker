@@ -19214,7 +19214,7 @@ __webpack_require__.r(__webpack_exports__);
   name: "AddHabit",
   data: function data() {
     return {
-      is_open: true,
+      is_open: false,
       form: new _includes_Form__WEBPACK_IMPORTED_MODULE_0__["default"]({
         name: {
           value: null,

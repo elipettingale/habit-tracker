@@ -60,7 +60,7 @@ export default {
 
     data() {
         return {
-            is_open: true,
+            is_open: false,
             form: new Form({
                 name: {
                     value: null, error: null
