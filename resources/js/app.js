@@ -3,18 +3,17 @@ require('./bootstrap');
 import { createApp } from "vue";
 import Habit from "./Components/Habit";
 import AddHabit from "./Components/AddHabit";
+import Day from "./Components/Day";
 
 const app = createApp({
     components: {
         Habit,
-        AddHabit
+        AddHabit,
+        Day
     },
 
     created() {
-        axios.get('api/habits')
-            .then(({data}) => {
-                this.habits = data;
-            });
+        this.refreshHabits();
 
         window.onkeydown = (e) => {
             if (e.key === 'Alt') {
@@ -41,8 +40,11 @@ const app = createApp({
             this.habits.push(habit);
         },
 
-        nextDay() {
-
+        refreshHabits() {
+            axios.get('api/habits')
+                .then(({data}) => {
+                    this.habits = data;
+                });
         }
     }
 });

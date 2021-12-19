@@ -25,7 +25,7 @@ class Habit extends Model
     public function getIsCompletedAttribute()
     {
         return $this->logs()
-            ->where('date', today())
+            ->where('date', tracker_day())
             ->exists();
     }
 
@@ -33,7 +33,7 @@ class Habit extends Model
     {
         return Log::create([
             'habit_id' => $this->id,
-            'date' => today()
+            'date' => tracker_day()
         ]);
     }
 }

@@ -404,14 +404,14 @@ Ensure the default browser behavior of the `hidden` attribute.
     top: 0px;
 
 }
-.right-0 {
-
-    right: 0px;
-
-}
 .left-0 {
 
     left: 0px;
+
+}
+.right-0 {
+
+    right: 0px;
 
 }
 .z-0 {
@@ -714,18 +714,18 @@ Ensure the default browser behavior of the `hidden` attribute.
     line-height: 1.75rem;
 
 }
-.text-xl {
-
-    font-size: 1.25rem;
-
-    line-height: 1.75rem;
-
-}
 .text-2xl {
 
     font-size: 1.5rem;
 
     line-height: 2rem;
+
+}
+.text-xl {
+
+    font-size: 1.25rem;
+
+    line-height: 1.75rem;
 
 }
 .font-medium {
@@ -736,11 +736,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 .font-semibold {
 
     font-weight: 600;
-
-}
-.font-bold {
-
-    font-weight: 700;
 
 }
 .leading-5 {
