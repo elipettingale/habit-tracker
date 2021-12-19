@@ -14,7 +14,11 @@
         filter: brightness(50%);
     }
 
-    &:hover {
+    &:hover:not(.is-completed) {
         transform: scale(1.15);
+    }
+
+    &.is-completed {
+        opacity: 0.25;
     }
 }

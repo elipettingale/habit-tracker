@@ -12,7 +12,7 @@
     <body id="app" class="antialiased">
         <div class="h-screen flex justify-center items-center bg-gray-50">
             <div class="flex">
-                <habit v-for="habit in habits" :habit="habit" />
+                <habit v-for="(habit, index) in habits" v-model="habits[index]" />
             </div>
         </div>
     </body>

@@ -848,8 +848,11 @@ Ensure the default browser behavior of the `hidden` attribute.
         color: var(--color);
         filter: brightness(50%);
     }
-.habit:hover {
+.habit:hover:not(.is-completed) {
         transform: scale(1.15);
+    }
+.habit.is-completed {
+        opacity: 0.25;
     }
 .hover\:text-gray-500:hover {
 

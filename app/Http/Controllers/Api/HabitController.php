@@ -10,4 +10,13 @@ class HabitController
     {
         return Habit::all();
     }
+
+    public function complete(Habit $habit)
+    {
+        if (!$habit->complete()) {
+            return false;
+        }
+
+        return $habit;
+    }
 }

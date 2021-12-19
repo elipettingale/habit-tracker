@@ -19210,7 +19210,22 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   name: "Habit",
-  props: ['habit']
+  props: ['modelValue'],
+  methods: {
+    complete: function complete() {
+      var _this = this;
+
+      if (this.modelValue.is_completed) {
+        return;
+      }
+
+      axios.post("api/habits/".concat(this.modelValue.id, "/complete")).then(function (_ref) {
+        var data = _ref.data;
+
+        _this.$emit('update:modelValue', data);
+      });
+    }
+  }
 });
 
 /***/ }),
@@ -19230,14 +19245,19 @@ __webpack_require__.r(__webpack_exports__);
 
 function render(_ctx, _cache, $props, $setup, $data, $options) {
   return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", {
-    "class": "habit",
-    style: (0,vue__WEBPACK_IMPORTED_MODULE_0__.normalizeStyle)("--color: ".concat($props.habit.color))
+    "class": (0,vue__WEBPACK_IMPORTED_MODULE_0__.normalizeClass)(["habit", {
+      'is-completed': $props.modelValue.is_completed
+    }]),
+    style: (0,vue__WEBPACK_IMPORTED_MODULE_0__.normalizeStyle)("--color: ".concat($props.modelValue.color)),
+    onClick: _cache[0] || (_cache[0] = function () {
+      return $options.complete && $options.complete.apply($options, arguments);
+    })
   }, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("i", {
-    "class": (0,vue__WEBPACK_IMPORTED_MODULE_0__.normalizeClass)($props.habit.icon)
+    "class": (0,vue__WEBPACK_IMPORTED_MODULE_0__.normalizeClass)($props.modelValue.icon)
   }, null, 2
   /* CLASS */
-  )], 4
-  /* STYLE */
+  )], 6
+  /* CLASS, STYLE */
   );
 }
 
