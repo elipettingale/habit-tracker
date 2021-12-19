@@ -551,6 +551,11 @@ Ensure the default browser behavior of the `hidden` attribute.
     grid-template-columns: repeat(1, minmax(0, 1fr));
 
 }
+.flex-col {
+
+    flex-direction: column;
+
+}
 .items-center {
 
     align-items: center;
@@ -854,6 +859,68 @@ Ensure the default browser behavior of the `hidden` attribute.
 .habit.is-completed {
         opacity: 0.25;
     }
+.alt-menu {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 2rem;
+}
+.alt-menu__add {
+
+    margin: 1.25rem;
+
+}
+.alt-menu__add {
+
+    cursor: pointer;
+
+}
+.alt-menu__add {
+
+    border-radius: 9999px;
+
+}
+.alt-menu__add {
+
+    border-width: 4px;
+
+}
+.alt-menu__add {
+
+        border-color: var(--gray-300);
+        transition: all 150ms ease-in-out;
+    }
+.alt-menu__add i {
+
+    display: flex;
+
+}
+.alt-menu__add i {
+
+    align-items: center;
+
+}
+.alt-menu__add i {
+
+    justify-content: center;
+
+}
+.alt-menu__add i {
+
+    font-size: 1.5rem;
+
+    line-height: 2rem;
+
+}
+.alt-menu__add i {
+
+            width: 40px;
+            height: 40px;
+            color: var(--gray-500);
+        }
+.alt-menu__add:hover {
+            transform: scale(1.15);
+        }
 .hover\:text-gray-500:hover {
 
     color: var(--gray-500);

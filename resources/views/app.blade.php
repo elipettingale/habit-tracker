@@ -10,9 +10,14 @@
         <script src="{{ asset('js/app.js') }}" defer></script>
     </head>
     <body id="app" class="antialiased">
-        <div class="h-screen flex justify-center items-center bg-gray-50">
+        <div class="h-screen flex flex-col justify-center items-center bg-gray-50">
             <div class="flex">
                 <habit v-for="(habit, index) in habits" v-model="habits[index]" />
+            </div>
+            <div v-if="alt" class="alt-menu">
+                <button class="alt-menu__add">
+                    <i class="fas fa-plus"></i>
+                </button>
             </div>
         </div>
     </body>
