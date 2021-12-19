@@ -2,10 +2,12 @@ require('./bootstrap');
 
 import { createApp } from "vue";
 import Habit from "./Components/Habit";
+import AddHabit from "./Components/AddHabit";
 
 const app = createApp({
     components: {
-        Habit
+        Habit,
+        AddHabit
     },
 
     created() {
@@ -31,6 +33,12 @@ const app = createApp({
         return {
             habits: [],
             alt: false,
+        }
+    },
+
+    methods: {
+        addHabit(habit) {
+            this.habits.push(habit);
         }
     }
 });

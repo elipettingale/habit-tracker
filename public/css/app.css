@@ -389,6 +389,11 @@ Ensure the default browser behavior of the `hidden` attribute.
     position: fixed;
 
 }
+.absolute {
+
+    position: absolute;
+
+}
 .relative {
 
     position: relative;
@@ -407,6 +412,11 @@ Ensure the default browser behavior of the `hidden` attribute.
 .z-0 {
 
     z-index: 0;
+
+}
+.m-8 {
+
+    margin: 2rem;
 
 }
 .mx-auto {
@@ -469,6 +479,11 @@ Ensure the default browser behavior of the `hidden` attribute.
 .-mt-px {
 
     margin-top: -1px;
+
+}
+.mr-6 {
+
+    margin-right: 1.5rem;
 
 }
 .flex {
@@ -881,68 +896,143 @@ Ensure the default browser behavior of the `hidden` attribute.
 .habit.is-completed {
         opacity: 0.25;
     }
-.menu {
-    position: absolute;
-    top: 0;
-    right: 0;
-    margin: 2rem;
-}
-.menu__add {
-
-    margin: 1.25rem;
-
-}
-.menu__add {
-
-    cursor: pointer;
-
-}
-.menu__add {
-
-    border-radius: 9999px;
-
-}
-.menu__add {
-
-    border-width: 4px;
-
-}
-.menu__add {
-
-        border-color: var(--gray-300);
-        transition: all 150ms ease-in-out;
-    }
-.menu__add i {
+.add-habit {
 
     display: flex;
-
-}
-.menu__add i {
 
     align-items: center;
 
 }
-.menu__add i {
+.add-habit__button {
+
+    margin-left: 0.5rem;
+
+}
+.add-habit__button {
+
+    cursor: pointer;
+
+}
+.add-habit__button {
+
+    border-radius: 9999px;
+
+}
+.add-habit__button {
+
+    border-width: 4px;
+
+}
+.add-habit__button {
+
+        border-color: var(--gray-300);
+        transition: all 150ms ease-in-out;
+    }
+.add-habit__button i {
+
+    display: flex;
+
+}
+.add-habit__button i {
+
+    align-items: center;
+
+}
+.add-habit__button i {
 
     justify-content: center;
 
 }
-.menu__add i {
+.add-habit__button i {
 
     font-size: 1.5rem;
 
     line-height: 2rem;
 
 }
-.menu__add i {
+.add-habit__button i {
 
             width: 40px;
             height: 40px;
             color: var(--gray-500);
         }
-.menu__add:hover {
+.add-habit__button:hover {
             transform: scale(1.15);
         }
+.add-habit__input {
+
+    margin-right: 0.5rem;
+
+}
+.add-habit__input {
+
+    border-radius: 0.25rem;
+
+}
+.add-habit__input {
+
+    border-width: 2px;
+
+}
+.add-habit__input {
+
+    border-color: var(--gray-300);
+
+}
+.add-habit__input {
+
+    padding-left: 0.5rem;
+
+    padding-right: 0.5rem;
+
+}
+.add-habit__input {
+
+    padding-top: 0.25rem;
+
+    padding-bottom: 0.25rem;
+
+}
+.add-habit__input--color {
+
+    margin-right: 0.5rem;
+
+}
+.add-habit__input--color {
+
+    cursor: pointer;
+
+}
+.add-habit__input--color {
+
+    border-radius: 0.25rem;
+
+}
+.add-habit__input--color {
+
+    border-width: 2px;
+
+}
+.add-habit__input--color {
+
+    border-color: var(--gray-300);
+
+}
+.add-habit__input--color {
+
+            height: 36px;
+            padding: 0 3px;
+        }
+.add-habit__input--color.has-error {
+
+    border-color: var(--pink-500);
+
+}
+.add-habit__input.has-error {
+
+    border-color: var(--pink-500);
+
+}
 .hover\:text-gray-500:hover {
 
     color: var(--gray-500);

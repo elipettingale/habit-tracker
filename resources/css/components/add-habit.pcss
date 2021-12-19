@@ -1,0 +1,42 @@
+
+.add-habit {
+    @apply flex items-center;
+
+    &__button {
+        @apply cursor-pointer rounded-full border-4 ml-2;
+
+        border-color: var(--gray-300);
+        transition: all 150ms ease-in-out;
+
+        i {
+            @apply flex justify-center items-center text-2xl;
+
+            width: 40px;
+            height: 40px;
+            color: var(--gray-500);
+        }
+
+        &:hover {
+            transform: scale(1.15);
+        }
+    }
+
+    &__input {
+        @apply border-2 border-gray-300 rounded px-2 py-1 mr-2;
+
+        &--color {
+            @apply cursor-pointer border-2 border-gray-300 rounded mr-2;
+
+            height: 36px;
+            padding: 0 3px;
+
+            &.has-error {
+                @apply border-pink-500;
+            }
+        }
+
+        &.has-error {
+            @apply border-pink-500;
+        }
+    }
+}

@@ -14,10 +14,8 @@
             <div class="flex">
                 <habit v-for="(habit, index) in habits" v-model="habits[index]" />
             </div>
-            <div class="menu">
-                <button class="menu__add">
-                    <i class="fas fa-plus"></i>
-                </button>
+            <div class="absolute top-0 right-0 m-8">
+                <add-habit v-on:saved="addHabit" />
             </div>
         </div>
     </body>
