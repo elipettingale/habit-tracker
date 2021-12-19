@@ -13,11 +13,24 @@ const app = createApp({
             .then(({data}) => {
                 this.habits = data;
             });
+
+        window.onkeydown = (e) => {
+            if (e.key === 'Alt') {
+                this.alt = true;
+            }
+        }
+
+        window.onkeyup = (e) => {
+            if (e.key === 'Alt') {
+                this.alt = false;
+            }
+        }
     },
 
     data() {
         return {
-            habits: []
+            habits: [],
+            alt: false,
         }
     }
 });

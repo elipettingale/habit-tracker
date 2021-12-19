@@ -19288,10 +19288,23 @@ var app = (0,vue__WEBPACK_IMPORTED_MODULE_0__.createApp)({
       var data = _ref.data;
       _this.habits = data;
     });
+
+    window.onkeydown = function (e) {
+      if (e.key === 'Alt') {
+        _this.alt = true;
+      }
+    };
+
+    window.onkeyup = function (e) {
+      if (e.key === 'Alt') {
+        _this.alt = false;
+      }
+    };
   },
   data: function data() {
     return {
-      habits: []
+      habits: [],
+      alt: false
     };
   }
 });
