@@ -1,0 +1,20 @@
+
+.habit {
+    @apply cursor-pointer rounded-full border-4 m-5;
+
+    border-color: var(--color);
+    transition: all 150ms ease-in-out;
+
+    i {
+        @apply flex justify-center items-center text-6xl;
+
+        width: 100px;
+        height: 100px;
+        color: var(--color);
+        filter: brightness(50%);
+    }
+
+    &:hover {
+        transform: scale(1.15);
+    }
+}

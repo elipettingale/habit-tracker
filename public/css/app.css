@@ -615,19 +615,14 @@ Ensure the default browser behavior of the `hidden` attribute.
     background-color: var(--white);
 
 }
-.bg-gray-100 {
-
-    background-color: var(--gray-100);
-
-}
-.bg-blue-600 {
-
-    background-color: var(--blue-600);
-
-}
 .bg-gray-50 {
 
     background-color: var(--gray-50);
+
+}
+.bg-gray-100 {
+
+    background-color: var(--gray-100);
 
 }
 .p-6 {
@@ -809,6 +804,53 @@ Ensure the default browser behavior of the `hidden` attribute.
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
 }
+/* Components */
+.habit {
+
+    margin: 1.25rem;
+
+    cursor: pointer;
+
+    border-radius: 9999px;
+
+    border-width: 4px;
+
+    border-color: var(--color);
+    transition: all 150ms ease-in-out;
+
+}
+.habit i {
+
+    display: flex;
+
+}
+.habit i {
+
+    align-items: center;
+
+}
+.habit i {
+
+    justify-content: center;
+
+}
+.habit i {
+
+    font-size: 3.75rem;
+
+    line-height: 1;
+
+}
+.habit i {
+
+        width: 100px;
+        height: 100px;
+        color: var(--color);
+        filter: brightness(50%);
+    }
+.habit:hover {
+        transform: scale(1.15);
+    }
 .hover\:text-gray-500:hover {
 
     color: var(--gray-500);
