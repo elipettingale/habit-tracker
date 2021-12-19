@@ -45,7 +45,7 @@
                 <i class="fas fa-check"></i>
             </button>
 
-            <button v-if="is_open" class="add-habit__button" @click="is_open = false">
+            <button v-if="is_open" class="add-habit__button" @click="close">
                 <i class="fas fa-times"></i>
             </button>
         </div>
@@ -91,6 +91,14 @@ export default {
                         this.form.fillErrors(response.data.errors);
                     }
                 });
+        },
+
+        close() {
+            this.is_open = false;
+
+            window.setTimeout(() => {
+                this.form.clearAll();
+            }, 300);
         }
     }
 }

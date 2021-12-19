@@ -19254,6 +19254,14 @@ __webpack_require__.r(__webpack_exports__);
           _this.form.fillErrors(response.data.errors);
         }
       });
+    },
+    close: function close() {
+      var _this2 = this;
+
+      this.is_open = false;
+      window.setTimeout(function () {
+        _this2.form.clearAll();
+      }, 300);
     }
   }
 });
@@ -19455,8 +19463,8 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
   }, _hoisted_6)) : (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("v-if", true), $data.is_open ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("button", {
     key: 2,
     "class": "add-habit__button",
-    onClick: _cache[10] || (_cache[10] = function ($event) {
-      return $data.is_open = false;
+    onClick: _cache[10] || (_cache[10] = function () {
+      return $options.close && $options.close.apply($options, arguments);
     })
   }, _hoisted_8)) : (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("v-if", true)])]);
 }
