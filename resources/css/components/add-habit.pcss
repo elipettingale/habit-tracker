@@ -2,6 +2,21 @@
 .add-habit {
     @apply flex items-center;
 
+    &__buttons {
+        width: 112px;
+        text-align: right;
+    }
+
+    &__form {
+        transition: all 200ms ease-in-out;
+        opacity: 0;
+
+        &.is-open {
+            opacity: 1;
+            transform: translateX(-25px);
+        }
+    }
+
     &__button {
         @apply cursor-pointer rounded-full border-4 ml-2 bg-white;
 
@@ -25,7 +40,7 @@
         @apply border-2 border-gray-300 rounded px-2 py-1 mr-2 bg-white;
 
         &--color {
-            @apply cursor-pointer border-2 border-gray-300 rounded mr-2;
+            @apply cursor-pointer border-2 border-gray-300 rounded mr-2 bg-white;
 
             height: 36px;
             padding: 0 3px;

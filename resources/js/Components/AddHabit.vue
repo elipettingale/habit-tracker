@@ -1,6 +1,6 @@
 <template>
     <div class="add-habit">
-        <div v-if="is_open" class="mr-6 flex items-center">
+        <div class="add-habit__form flex items-center" :class="{'is-open' : is_open}">
             <input
                 type="text"
                 class="add-habit__input"
@@ -36,7 +36,7 @@
                 placeholder="Target"
             />
         </div>
-        <div>
+        <div class="add-habit__buttons">
             <button v-if="!is_open" class="add-habit__button" @click="is_open = true">
                 <i class="fas fa-plus"></i>
             </button>
