@@ -824,101 +824,123 @@ Ensure the default browser behavior of the `hidden` attribute.
     transition: all 150ms ease-in-out;
 
 }
-.habit i {
+.habit i, .habit span {
 
     display: flex;
 
 }
-.habit i {
+.habit i, .habit span {
 
     align-items: center;
 
 }
-.habit i {
+.habit i, .habit span {
 
     justify-content: center;
 
 }
-.habit i {
+.habit i, .habit span {
 
     font-size: 3.75rem;
 
     line-height: 1;
 
 }
-.habit i {
+.habit i, .habit span {
 
         width: 100px;
         height: 100px;
         color: var(--color);
         filter: brightness(50%);
     }
+.habit span {
+
+    padding: 0.5rem;
+
+}
+.habit span {
+
+    text-align: center;
+
+}
+.habit span {
+
+    font-size: 1.125rem;
+
+    line-height: 1.75rem;
+
+}
+.habit span {
+
+    font-weight: 700;
+
+}
 .habit:hover:not(.is-completed) {
         transform: scale(1.15);
     }
 .habit.is-completed {
         opacity: 0.25;
     }
-.alt-menu {
+.menu {
     position: absolute;
     top: 0;
     right: 0;
     margin: 2rem;
 }
-.alt-menu__add {
+.menu__add {
 
     margin: 1.25rem;
 
 }
-.alt-menu__add {
+.menu__add {
 
     cursor: pointer;
 
 }
-.alt-menu__add {
+.menu__add {
 
     border-radius: 9999px;
 
 }
-.alt-menu__add {
+.menu__add {
 
     border-width: 4px;
 
 }
-.alt-menu__add {
+.menu__add {
 
         border-color: var(--gray-300);
         transition: all 150ms ease-in-out;
     }
-.alt-menu__add i {
+.menu__add i {
 
     display: flex;
 
 }
-.alt-menu__add i {
+.menu__add i {
 
     align-items: center;
 
 }
-.alt-menu__add i {
+.menu__add i {
 
     justify-content: center;
 
 }
-.alt-menu__add i {
+.menu__add i {
 
     font-size: 1.5rem;
 
     line-height: 2rem;
 
 }
-.alt-menu__add i {
+.menu__add i {
 
             width: 40px;
             height: 40px;
             color: var(--gray-500);
         }
-.alt-menu__add:hover {
+.menu__add:hover {
             transform: scale(1.15);
         }
 .hover\:text-gray-500:hover {

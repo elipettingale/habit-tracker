@@ -5,13 +5,17 @@
     border-color: var(--color);
     transition: all 150ms ease-in-out;
 
-    i {
+    i, span {
         @apply flex justify-center items-center text-6xl;
 
         width: 100px;
         height: 100px;
         color: var(--color);
         filter: brightness(50%);
+    }
+
+    span {
+        @apply text-lg text-center p-2 font-bold;
     }
 
     &:hover:not(.is-completed) {

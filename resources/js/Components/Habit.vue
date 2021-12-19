@@ -5,7 +5,8 @@
         :style="`--color: ${modelValue.color}`"
         @click="complete"
     >
-        <i :class="modelValue.icon" />
+        <i v-if="!$root.alt" :class="modelValue.icon" />
+        <span v-if="$root.alt" v-text="modelValue.name"></span>
     </div>
 </template>
 
