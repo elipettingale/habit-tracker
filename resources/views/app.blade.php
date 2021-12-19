@@ -9,6 +9,8 @@
         <script src="{{ asset('js/app.js') }}" defer></script>
     </head>
     <body id="app" class="antialiased">
+        <div class="h-screen flex justify-center items-center bg-gray-50">
 
+        </div>
     </body>
 </html>

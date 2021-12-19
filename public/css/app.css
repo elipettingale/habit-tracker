@@ -496,6 +496,11 @@ Ensure the default browser behavior of the `hidden` attribute.
     height: 1.25rem;
 
 }
+.h-screen {
+
+    height: 100vh;
+
+}
 .h-8 {
 
     height: 2rem;
@@ -610,14 +615,19 @@ Ensure the default browser behavior of the `hidden` attribute.
     background-color: var(--white);
 
 }
-.bg-green-500 {
-
-    background-color: var(--green-500);
-
-}
 .bg-gray-100 {
 
     background-color: var(--gray-100);
+
+}
+.bg-blue-600 {
+
+    background-color: var(--blue-600);
+
+}
+.bg-gray-50 {
+
+    background-color: var(--gray-50);
 
 }
 .p-6 {
