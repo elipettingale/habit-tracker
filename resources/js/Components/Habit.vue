@@ -6,7 +6,7 @@
         @click="complete"
     >
         <i v-if="!$root.alt" :class="modelValue.icon" />
-        <span v-if="$root.alt" v-text="modelValue.name"></span>
+        <span v-if="$root.alt" v-text="modelValue.streak"></span>
     </div>
 </template>
 

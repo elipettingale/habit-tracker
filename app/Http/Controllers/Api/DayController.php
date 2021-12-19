@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\Api;
 
 use App\Http\Controllers\Controller;
+use App\Models\Habit;
 use Carbon\Carbon;
 use Illuminate\Support\Facades\Cache;
 
@@ -23,6 +24,14 @@ class DayController extends Controller
 
     public function next()
     {
+        foreach (Habit::all() as $habit) {
+            if ($habit->is_completed) {
+                $habit->incrementStreak();
+            } else {
+                $habit->resetStreak();
+            }
+        }
+
         $next = Carbon::createFromFormat('Y-m-d', $this->day)
             ->addDay();
 

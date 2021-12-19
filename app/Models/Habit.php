@@ -39,4 +39,18 @@ class Habit extends Model
             'date' => tracker_day()
         ]);
     }
+
+    public function incrementStreak()
+    {
+        $this->streak = $this->streak + 1;
+
+        return $this->save();
+    }
+
+    public function resetStreak()
+    {
+        $this->streak = 0;
+
+        return $this->save();
+    }
 }

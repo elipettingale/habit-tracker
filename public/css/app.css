@@ -712,6 +712,13 @@ Ensure the default browser behavior of the `hidden` attribute.
     line-height: 1.25rem;
 
 }
+.text-xl {
+
+    font-size: 1.25rem;
+
+    line-height: 1.75rem;
+
+}
 .text-lg {
 
     font-size: 1.125rem;
@@ -724,13 +731,6 @@ Ensure the default browser behavior of the `hidden` attribute.
     font-size: 1.5rem;
 
     line-height: 2rem;
-
-}
-.text-xl {
-
-    font-size: 1.25rem;
-
-    line-height: 1.75rem;
 
 }
 .font-medium {
@@ -906,9 +906,9 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 .habit span {
 
-    font-size: 1.125rem;
+    font-size: 1.5rem;
 
-    line-height: 1.75rem;
+    line-height: 2rem;
 
 }
 .habit span {
