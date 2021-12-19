@@ -11,6 +11,10 @@
     </head>
     <body id="app" class="antialiased">
         <div class="h-screen flex flex-col justify-center items-center bg-gray-50">
+            <div class="absolute top-0 left-0 m-8">
+                <p class="text-2xl">Sun 19/12</p>
+                <button class="text-xl" @click="nextDay">Next</button>
+            </div>
             <div class="flex">
                 <habit v-for="(habit, index) in habits" v-model="habits[index]" />
             </div>

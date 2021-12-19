@@ -19506,7 +19506,8 @@ var app = (0,vue__WEBPACK_IMPORTED_MODULE_0__.createApp)({
   methods: {
     addHabit: function addHabit(habit) {
       this.habits.push(habit);
-    }
+    },
+    nextDay: function nextDay() {}
   }
 });
 app.mount("#app");

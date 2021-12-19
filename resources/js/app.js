@@ -39,6 +39,10 @@ const app = createApp({
     methods: {
         addHabit(habit) {
             this.habits.push(habit);
+        },
+
+        nextDay() {
+
         }
     }
 });
