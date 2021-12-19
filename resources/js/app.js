@@ -32,6 +32,7 @@ const app = createApp({
         return {
             habits: [],
             alt: false,
+            active_habit: null
         }
     },
 

@@ -19575,7 +19575,8 @@ var app = (0,vue__WEBPACK_IMPORTED_MODULE_0__.createApp)({
   data: function data() {
     return {
       habits: [],
-      alt: false
+      alt: false,
+      active_habit: null
     };
   },
   methods: {

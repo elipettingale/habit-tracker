@@ -414,6 +414,11 @@ Ensure the default browser behavior of the `hidden` attribute.
     right: 0px;
 
 }
+.bottom-0 {
+
+    bottom: 0px;
+
+}
 .z-0 {
 
     z-index: 0;

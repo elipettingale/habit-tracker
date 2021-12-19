@@ -14,11 +14,22 @@
             <div class="absolute top-0 left-0 m-8">
                 <day v-on:next="refreshHabits" />
             </div>
-            <div class="flex">
-                <habit v-for="(habit, index) in habits" v-model="habits[index]" />
-            </div>
             <div class="absolute top-0 right-0 m-8">
                 <add-habit v-on:saved="addHabit" />
+            </div>
+            <div class="absolute bottom-0 left-0 m-8">
+                <div v-if="active_habit">
+                    <p v-text="active_habit.name" class="text-xl"></p>
+                    <p v-text="active_habit.target"></p>
+                </div>
+            </div>
+            <div class="flex">
+                <habit
+                    v-for="(habit, index) in habits"
+                    v-model="habits[index]"
+                    @mouseover="active_habit = habit"
+                    @mouseleave="active_habit = null"
+                />
             </div>
         </div>
     </body>
