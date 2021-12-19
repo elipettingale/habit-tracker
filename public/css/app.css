@@ -835,6 +835,8 @@ Ensure the default browser behavior of the `hidden` attribute.
 
     border-width: 4px;
 
+    background-color: var(--white);
+
     border-color: var(--color);
     transition: all 150ms ease-in-out;
 
@@ -925,6 +927,11 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 .add-habit__button {
 
+    background-color: var(--white);
+
+}
+.add-habit__button {
+
         border-color: var(--gray-300);
         transition: all 150ms ease-in-out;
     }
@@ -977,6 +984,11 @@ Ensure the default browser behavior of the `hidden` attribute.
 .add-habit__input {
 
     border-color: var(--gray-300);
+
+}
+.add-habit__input {
+
+    background-color: var(--white);
 
 }
 .add-habit__input {
